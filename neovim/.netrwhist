@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/cuong/.config/alacritty/alacritty'
+let g:netrw_dirhist_2='/home/cuong/.config/nvim'
+let g:netrw_dirhist_1='/home/cuong/.vim/plugged/chadtree/config'
+let g:netrw_dirhist_0='/home/cuong/.vim/plugged/chadtree'
+let g:netrw_dirhist_9='/home/cuong/.vim/plugged'
+let g:netrw_dirhist_8='/home/cuong/.vim/plugged/chadtree'
+let g:netrw_dirhist_7='/home/cuong/.vim/plugged/chadtree/config'
+let g:netrw_dirhist_6='/home/cuong/.vim/plugged/chadtree'
+let g:netrw_dirhist_5='/home/cuong/.vim/plugged'
+let g:netrw_dirhist_4='/home/cuong/.vim/plugged/chadtree/config'
