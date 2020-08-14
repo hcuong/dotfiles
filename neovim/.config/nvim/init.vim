@@ -61,6 +61,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'maxmellon/vim-jsx-pretty'
 
   Plug 'ms-jpq/chadtree', { 'branch': 'chad', 'do': ':UpdateRemotePlugins' }
+  Plug 'ryanoasis/vim-devicons'
   Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
   "fuzzy finder
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
