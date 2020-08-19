@@ -111,7 +111,7 @@ nnoremap <silent> <leader>J :FZF ~<cr>
 
 nnoremap <leader>v <cmd>CHADopen<cr>
 
-map <leader>g :Ack
+map <leader>g :Ack<space>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif

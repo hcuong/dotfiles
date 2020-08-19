@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/cuong/.vim/plugged/chadtree/artifacts'
-let g:netrw_dirhist_2='/home/cuong/Projects/make-frontend/src'
-let g:netrw_dirhist_1='/home/cuong/Projects/make-frontend'
