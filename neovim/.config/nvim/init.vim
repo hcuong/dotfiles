@@ -60,7 +60,9 @@ call plug#begin("~/.vim/plugged")
   Plug 'sheerun/vim-polyglot'
   Plug 'maxmellon/vim-jsx-pretty'
 
-  Plug 'ms-jpq/chadtree', { 'branch': 'chad', 'do': ':UpdateRemotePlugins' }
+  Plug 'preservim/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  " Plug 'ms-jpq/chadtree', { 'branch': 'chad', 'do': ':UpdateRemotePlugins' }
   Plug 'ryanoasis/vim-devicons'
   Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
   "fuzzy finder
@@ -109,9 +111,19 @@ nnoremap <silent> <C-l> :call WinMove('l')<CR>
 nnoremap <silent> <leader>j :FZF<cr>
 nnoremap <silent> <leader>J :FZF ~<cr>
 
-nnoremap <leader>v <cmd>CHADopen<cr>
+map <leader>n :NERDTreeToggle<CR>
+nmap <leader>nf :NERDTreeFind<CR>
+autocmd vimenter * NERDTree
+let NERDTreeIgnore=['cdk.out','\.d.ts$']
+" nnoremap <leader>v <cmd>CHADopen<cr>
 
 map <leader>g :Ack<space>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_confirm=0
+let g:strip_only_modified_lines=1
+
+:set listchars=eol:$
