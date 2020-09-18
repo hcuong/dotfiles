@@ -114,6 +114,8 @@ nnoremap <silent> <leader>J :FZF ~<cr>
 map <leader>n :NERDTreeToggle<CR>
 nmap <leader>nf :NERDTreeFind<CR>
 autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['cdk.out','\.d.ts$']
 " nnoremap <leader>v <cmd>CHADopen<cr>
 
